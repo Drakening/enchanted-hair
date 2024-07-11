@@ -1,34 +1,16 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import styles from '../Styling/Order.module.css';
+import Delivery from '../Assets/deliveryPackage.jpg';
 
-const ServicesSection = () => {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
+const Order = () => {
 
   return (
     <section className={styles.servicesSection}>
       <div className={styles.servicesContainer}>
-        <motion.div
+        <div
           className={styles.servicesWrapper}
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
         >
-          <motion.div className={`${styles.contentRight} ${styles.hiding}`} variants={itemVariants}>
+          <div className={`${styles.contentRight}`}>
             <h2 className={styles.servicesHeading}>Steps to Order</h2>
             <p className={styles.servicesDescription}>
               The ordering process is incredibly reliable and easy, thus ensuring a smooth and hassle-free shopping experience for all customers.
@@ -40,16 +22,16 @@ const ServicesSection = () => {
               <li>Complete Your Payment and Await Delivery</li>
             </ul>
             <div className={styles.buttonWrapper}>
-              <a href="#" className={styles.primaryBtn}>PRODUCTS</a>
+              <a href="#products" className={styles.primaryBtn}>PRODUCTS</a>
             </div>
-          </motion.div>
-          <motion.div className={`${styles.imageWrapper} ${styles.hiding}`} variants={itemVariants}>
-            <img className={styles.servicesImg} src="./assets/deliveryPackage.jpg" loading="lazy" alt="" />
-          </motion.div>
-        </motion.div>
+          </div>
+          <div className={`${styles.imageWrapper}`}>
+            <img className={styles.servicesImg} src={Delivery} loading="lazy" alt="" />
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default ServicesSection;
+export default Order;

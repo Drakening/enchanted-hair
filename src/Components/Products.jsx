@@ -1,34 +1,18 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import styles from '../Styling/Products.module.css';
+import Ponytail from '../Assets/products/straight-brazilian-ponytail.webp';
 
 const products = [
-  { id: 1, imgSrc: './assets/products/peruvian.png', name: 'curly' },
-  { id: 2, imgSrc: './assets/products/peruvian.png', name: 'straight' },
-  { id: 3, imgSrc: './assets/products/peruvian.png', name: 'curly' },
-  { id: 4, imgSrc: './assets/products/frontalwig-removebg-preview.png', name: 'straight' },
-  { id: 5, imgSrc: './assets/products/frontalwig-removebg-preview.png', name: 'straight' },
-  { id: 6, imgSrc: './assets/products/frontalwig-removebg-preview.png', name: 'curly' },
+  { id: 1, imgSrc: Ponytail, name: 'curly' },
+  { id: 2, imgSrc: Ponytail, name: 'straight' },
+  { id: 3, imgSrc: Ponytail, name: 'curly' },
+  { id: 4, imgSrc: Ponytail, name: 'straight' },
+  { id: 5, imgSrc: Ponytail, name: 'straight' },
+  { id: 6, imgSrc: Ponytail, name: 'curly' },
 ];
 
 const ProductsSection = () => {
   const [filter, setFilter] = useState('all');
-
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
 
   const filteredProducts = products.filter(product =>
     filter === 'all' ? true : product.name === filter
@@ -65,15 +49,12 @@ const ProductsSection = () => {
             </a>
           </div>
           <div className={styles.tabContents}>
-            <motion.div
+            <div
               className={styles.tab}
-              initial="hidden"
-              animate="visible"
-              variants={containerVariants}
             >
               <div className={styles.productList}>
                 {filteredProducts.map(product => (
-                  <motion.div key={product.id} className={styles.listItem} variants={itemVariants}>
+                  <div key={product.id} className={styles.listItem}>
                     <a href="#" className={styles.productLink}>
                       <img className={styles.productImg} src={product.imgSrc} alt={product.name} />
                       <div className={styles.aboutProduct}>
@@ -82,10 +63,10 @@ const ProductsSection = () => {
                         </a>
                       </div>
                     </a>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

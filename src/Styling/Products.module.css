@@ -78,6 +78,7 @@
     display: flex;
     position: relative;
     max-width: 100%;
+    flex-direction: column;
   }
   .productImg {
     max-height: 300px;
@@ -104,17 +105,17 @@
   
   @media (max-width: 500px) {
     .productList {
-      grid-template-columns: 1fr; /* Change to a single column layout */
-      grid-column-gap: 0; /* Remove horizontal gap */
-      grid-row-gap: 20px; /* Adjust vertical gap */
+      grid-template-columns: 1fr;
+      grid-column-gap: 0;
+      grid-row-gap: 20px;
     }
     .products {
       background-color: #fff;
     }
     .listItem {
-      background-image: url(./assets/Background\ 2.png);
-      background-repeat: no-repeat; /* Ensure the background image does not repeat */
-      background-size: cover; /* Ensure the background image covers the entire area */
+      background-image: url(../Assets/Background2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .productsHeading {
       font-size: 32px;

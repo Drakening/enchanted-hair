@@ -95,6 +95,29 @@
     border-color: transparent transparent rgba(51, 45, 40, .5);
     outline: 0;
   }
+
+  
+.secondaryBtn {
+  border: 1px solid #332d28;
+  color: #332d28;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 35px;
+  align-items: center;
+  padding: 20px 40px;
+  font-weight: 700;
+  transition: all .2s;
+  display: inline-block;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+
+.secondaryBtn:hover {
+  background-color: #332d28;
+  color: #fff;
+}
   
   /* Media query for screens under 500px */
   @media (max-width: 500px) {

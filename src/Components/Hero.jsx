@@ -1,56 +1,18 @@
-import React, { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
-import SplitType from 'split-type';
+import React from 'react';
 import styles from '../Styling/Hero.module.css'; 
 import oneStar from '../Assets/hero/oneStar.png';
 import threeStar from '../Assets/hero/threeStars.png'
 
 
 const HeroSection = () => {
-  const headerRef = useRef(null);
-
-  useEffect(() => {
-    if (headerRef.current) {
-      const split = new SplitType(headerRef.current.querySelector('h1'), {
-        types: 'words, chars',
-      });
-    }
-  }, []);
-
-  const headerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: (i) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.05,
-      },
-    }),
-  };
 
   return (
     <section className={`${styles.hero2} ${styles.section}`}>
       <div className={styles.heroContainer2}>
         <div className={`${styles.heroContent2} ${styles.animate}`}>
-          <div className={styles.heroTitle2} ref={headerRef}>
+          <div className={styles.heroTitle2}>
             <h1>
-              <motion.span
-                initial="hidden"
-                animate="visible"
-                variants={headerVariants}
-                custom={0}
-                className={styles.gradientText}
-              >
-                Crowning
-              </motion.span>{' '}
-              <motion.span
-                initial="hidden"
-                animate="visible"
-                variants={headerVariants}
-                custom={1}
-              >
-                You with Confidence
-              </motion.span>
+              <span className={styles.gradientText}>Crowning</span> <span>You with Confidence</span>
             </h1>
           </div>
           <p className={styles.heroText2}>
