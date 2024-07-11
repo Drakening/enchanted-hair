@@ -110,15 +110,3 @@
   }
   }
   
-  /*order*/
-  .ordering {
-    margin-top: 30px;
-    grid-row-gap: 15px;
-    background-clip: text;
-    flex-direction: column;
-    margin-top: 10px;
-    padding-left: 20px;
-    font-size: 18px;
-    display: flex;
-  }
-  

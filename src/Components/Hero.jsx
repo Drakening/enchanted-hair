@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import SplitType from 'split-type';
 import styles from '../Styling/Hero.module.css'; 
+import oneStar from '../Assets/hero/oneStar.png';
+import threeStar from '../Assets/hero/threeStars.png'
+
+
 const HeroSection = () => {
   const headerRef = useRef(null);
 
@@ -25,7 +29,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className={styles.hero2}>
+    <section className={`${styles.hero2} ${styles.section}`}>
       <div className={styles.heroContainer2}>
         <div className={`${styles.heroContent2} ${styles.animate}`}>
           <div className={styles.heroTitle2} ref={headerRef}>
@@ -53,7 +57,7 @@ const HeroSection = () => {
             Discover the perfect wig to express your unique style and your beauty.
           </p>
           <div className={styles.heroBtnWrapper}>
-            <a href="#" className={styles.ctaBtn}>
+            <a href="#contact" className={styles.ctaBtn}>
               ORDER NOW
               <svg viewBox="0 0 19 9" fill="none">
                 <path
@@ -62,7 +66,7 @@ const HeroSection = () => {
                 />
               </svg>
             </a>
-            <a href="#" className={styles.heroBtn}>
+            <a href="#products" className={styles.heroBtn}>
               Products
               <svg viewBox="0 0 19 9" fill="none">
                 <path
@@ -74,8 +78,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <img className={`${styles.threeStar} ${styles.animate}`} src="./assets/hero/threeStars.png" alt="Three Stars" />
-      <img className={`${styles.oneStar} ${styles.animate}`} src="./assets/hero/oneStar.png" alt="One Star" />
+      <img className={`${styles.threeStar} ${styles.animate}`} src={threeStar} alt="Three Stars" />
+      <img className={`${styles.oneStar} ${styles.animate}`} src={oneStar} alt="One Star" />
     </section>
   );
 };
