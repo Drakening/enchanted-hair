@@ -1,0 +1,280 @@
+
+.hero2 {
+    position: relative;
+    background-image: url(../Assets/hero/hero1.png);
+    background-position: 50% 0;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    display: flex;
+  }
+  
+  .heroContainer2 {
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 85px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .heroContent2 {
+    width: 100%;
+  }
+  
+  .heroTitle2 {
+    width: 55%;
+    margin-bottom: 40px;
+    font-size: 54px;
+    color: #332b28;
+    letter-spacing: -2px;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+  
+  .gradientText {
+    background: -webkit-linear-gradient(#D4145A, #FBB03B);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .heroText2 {
+    font-size: 18px;
+    color: #332b28;
+  }
+  
+  .heroBtnWrapper {
+    grid-column-gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  .heroBtn {
+    border: 1px solid #ffd687;
+    background-color: #ffd687;
+    color: #332b28;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    padding: 20px 40px;
+    font-weight: 700;
+    transition: all .3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  
+  .ctaBtn {
+    border: 1px solid #fc563f;
+    background-color: #fc563f;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  
+  
+  .heroBtn svg, .ctaBtn svg {
+    width: 20px;
+    transition: transform .3s;
+  }
+  
+  .heroBtn:hover svg, .ctaBtn:hover svg {
+    transform: translateX(10px);
+  }
+  
+  
+  .threeStar {
+    position: absolute;
+    top: 30%;
+    bottom: auto;
+    left: auto;
+    right: 8%;
+  }
+  
+  .oneStar {
+    position: absolute;
+    top: 30%;
+    bottom: auto;
+    left: auto;
+    right: 48%;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @media (max-width: 900px) {
+    .hero2 {
+      background-position: 40% 0;
+    }
+  
+    .heroTitle2 {
+      width: 55%;
+      margin-bottom: 20px;
+      font-size: 54px;
+      line-height: 1em;
+    }
+  
+    .heroContainer2 {
+      padding-right: 25px;
+    }
+  
+    .heroTitle2 h1 {
+      font-size: 52px;
+    }
+  
+    .heroText2 {
+      font-size: 18px;
+      color: #332b28;
+      width: 55%;
+    }
+  
+    .oneStar {
+      display: none;
+    }
+  
+    .threeStar {
+      position: absolute;
+      top: 25%;
+      bottom: auto;
+      left: auto;
+      right: 43%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .hero2 {
+      background-position: 60% 0;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+  
+    .hero2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(243, 238, 233, 0.6);
+      z-index: 1;
+    }
+  
+    .heroContent2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .heroContainer2 {
+      padding-right: 0px;
+    }
+  
+    .heroTitle2 {
+      width: 90%;
+    }
+  
+    .heroTitle2 h1 {
+      font-size: 44px;
+      text-align: center;
+    }
+  
+    .heroText2 {
+      font-size: 16px;
+      color: #332b28;
+      width: 90%;
+      text-align: center;
+    }
+  
+    .heroBtnWrapper {
+      gap: 20px;
+      align-items: center;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .heroBtn {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 35px;
+      padding: 20px 80px;
+      font-weight: 700;
+      transition: all .3s;
+    }
+  
+    .threeStar {
+      position: absolute;
+      top: 15%;
+      bottom: auto;
+      left: auto;
+      right: 78%;
+      z-index: 1;
+    }
+  
+    .oneStar {
+      display: block;
+      position: absolute;
+      top: 87%;
+      bottom: auto;
+      left: auto;
+      right: 15%;
+      z-index: 1;
+    }
+  }
+  
+  /* Keyframes for text reveal and breathing effect */
+  @keyframes textReveal {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes breathing {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  /* Initial state for animations */
+  .heroContent2, .threeStar, .oneStar {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  /* Apply text reveal animation */
+  .heroContent2.animate {
+    animation: textReveal 1s ease-in-out 0s forwards, gradient 2s ease infinite;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Apply star animations */
+  .threeStar.animate, .oneStar.animate {
+    animation: textReveal 1s ease-in-out 1s forwards, breathing 3s ease-in-out infinite 1s;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

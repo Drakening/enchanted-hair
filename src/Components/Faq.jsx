@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './FAQSection.module.css'; // Import the CSS module
+import styles from '../Styling/Faq.module.css';
 
 const FAQSection = () => {
   const faqData = [

@@ -1,0 +1,58 @@
+/*boxes*/
+.rowFeatures {
+    padding: 50px 0px;
+  }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .rowCols {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping of columns */
+    justify-content: flex-start;
+  }
+  .cols {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex: 1 1 25%;
+    max-width: 25%;
+  }
+  .boxIcon {
+    padding-right: 20px;
+    align-self: center;
+    font-size: 40px;
+  }
+  .boxIcon img {
+    width: 60px;
+  }
+  .boxTitle {
+    line-height: 22px;
+  }
+  .description {
+    line-height: 30px;
+  }
+
+  /* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .cols {
+      flex: 1 1 50%; /* 2 columns in a row */
+      max-width: 50%;
+      display: flex;
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cols {
+      flex: 1 1 50%; /* 2 columns in a row */
+      max-width: 50%;
+      display: flex;
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+    }
+  }

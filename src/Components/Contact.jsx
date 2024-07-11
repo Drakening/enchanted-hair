@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ContactSection.module.css'; // Import the CSS module
+import styles from '../Styling/Contact.module.css'; 
 
 const ContactSection = () => {
   return (

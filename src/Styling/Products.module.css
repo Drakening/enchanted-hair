@@ -1,0 +1,123 @@
+
+.products {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    background-color: #f3eee9;
+  }
+  .productsContainer {
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+  }
+  .productsHeading {
+    text-align: center;
+    max-width: 520px;
+    margin-bottom: 50px;
+    font-size: 48px;
+  }
+  .productsTabs {
+    width: 100%;
+    position: relative;
+  }
+  .filterLinks {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    display: flex;
+    position: relative;
+  }
+  .filter {
+    max-width: 100%;
+    text-align: left;
+    cursor: pointer;
+    color: #222;
+    padding: 9px 30px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px solid rgba(51, 45, 40, .4);
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .active {
+    border-bottom-color: #fc563f;
+    color: #fc563f;
+  }
+  .tabContents {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .tab {
+    position: relative;
+    display: block;
+  }
+  .productList {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+  .listItem {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  .productLink {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+  }
+  .productImg {
+    max-height: 300px;
+  }
+  .aboutProduct {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .learnMore {
+    max-width: 100%;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .productName {
+    letter-spacing: 0;
+    text-transform: capitalize;
+    align-items: center;
+    min-height: 48px;
+    font-size: 20px;
+    transition: color .3s;
+    display: flex;
+  }
+  
+  @media (max-width: 500px) {
+    .productList {
+      grid-template-columns: 1fr; /* Change to a single column layout */
+      grid-column-gap: 0; /* Remove horizontal gap */
+      grid-row-gap: 20px; /* Adjust vertical gap */
+    }
+    .products {
+      background-color: #fff;
+    }
+    .listItem {
+      background-image: url(./assets/Background\ 2.png);
+      background-repeat: no-repeat; /* Ensure the background image does not repeat */
+      background-size: cover; /* Ensure the background image covers the entire area */
+    }
+    .productsHeading {
+      font-size: 32px;
+  }
+  }
+  

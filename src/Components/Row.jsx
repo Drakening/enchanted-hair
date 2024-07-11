@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from './RowFeatures.module.css'; // Assuming you are using CSS Modules for styling
+import styles from '../Styling/Row.module.css';
 
 const features = [
   { icon: './assets/icons/box.png', title: 'Free Shipping', description: 'Standard shipping' },

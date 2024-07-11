@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import SplitType from 'split-type';
-import styles from './HeroSection.module.css'; // Assuming you are using CSS Modules for styling
-
+import styles from '../Styling/Hero.module.css'; 
 const HeroSection = () => {
   const headerRef = useRef(null);
 

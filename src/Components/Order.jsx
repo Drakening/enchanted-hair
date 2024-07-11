@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from './ServicesSection.module.css'; // Assuming you are using CSS Modules for styling
+import styles from '../Styling/Order.module.css';
 
 const ServicesSection = () => {
   const containerVariants = {

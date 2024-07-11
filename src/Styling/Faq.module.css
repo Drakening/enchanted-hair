@@ -1,0 +1,128 @@
+/*faq*/
+.faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f3eee9;
+  }
+  
+  .faqContainer {
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+  }
+  
+  .faqHeading {
+    max-width: 640px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #332d28;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-family: Rufina, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2em;
+  }
+  
+  .faqGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+  }
+  
+  .faqCard {
+    backdrop-filter: blur(8px);
+    color: #fff;
+    text-align: left;
+    background-color: rgba(0, 0, 0, .26);
+    border-radius: 16px;
+    min-height: 0;
+    padding: 20px 40px 16px;
+    position: relative;
+  }
+  
+  .faqTitle {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  
+  .answer {
+    letter-spacing: .1px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  
+  .faqCard:nth-child(1) {
+    grid-column: span 2;
+    background-color: #F05365;
+    text-align: center;
+  }
+  
+  .faqCard:nth-child(2),
+  .faqCard:nth-child(3) {
+    grid-column: span 1;
+    background-color: #F6AA1C;
+  }
+  .faqCard:nth-child(4) {
+    grid-column: span 2;
+    background-color: #F05365;
+    text-align: center;
+  
+  }
+  .faqCard:nth-child(5),
+  .faqCard:nth-child(6) {
+    grid-column: span 1;
+    background-color: #F6AA1C;
+  }
+  
+  @media (max-width: 500px) {
+    .faqGrid {
+      grid-template-columns: 1fr; /* Change to a single column layout */
+      grid-column-gap: 29px; /* Remove horizontal gap */
+      grid-row-gap: 20px; /* Adjust vertical gap */
+    }
+    .faqCard:nth-child(1) {
+      grid-column: span 2;
+      background-color: #F6AA1C;
+      text-align: center;
+    }
+    
+    .faqCard:nth-child(2){
+      grid-column: span 2;
+      background-color: #F05365;
+      text-align: center;
+    }
+    .faqCard:nth-child(3) {
+      grid-column: span 2;
+      background-color: #F6AA1C;
+    }
+    .faqCard:nth-child(4) {
+      grid-column: span 2;
+      background-color: #F05365;
+      text-align: center;
+    
+    }
+    .faqCard:nth-child(5){
+      grid-column: span 2;
+      background-color: #F6AA1C;
+    }
+    .faqCard:nth-child(6) {
+      grid-column: span 2;
+      background-color: #F05365;
+    }
+    .faqHeading {
+      font-size: 32px;
+  }
+  }

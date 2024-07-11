@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import styles from './ProductsSection.module.css'; // Assuming you are using CSS Modules for styling
+import styles from '../Styling/Products.module.css';
 
 const products = [
   { id: 1, imgSrc: './assets/products/peruvian.png', name: 'curly' },
