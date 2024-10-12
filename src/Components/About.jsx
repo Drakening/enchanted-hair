@@ -4,7 +4,7 @@ import AboutImg from '../Assets/aboutY.jpg';
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section id="about" className={styles.Section}>
       <div className={styles.aboutContainer}>
         <div className={styles.aboutWrapper}>
           <div className={styles.imageWrapper}>
@@ -13,7 +13,7 @@ const About = () => {
           <div className={styles.contentRight}>
             <h2 className={styles.aboutHeading}>Wigs That Will Leave You Feeling Fabulous!</h2>
             <p className={styles.description}>
-              Loved by celebs like Sarah Jessica Parker, this upscale nail salon created by the one and only Bertie Capone herself is incredible.
+            At Enchanted hair, we believe that everyone deserves to feel confident and radiant, no matter their hair situation. We specialize in providing high-quality wigs and ponytails that cater to a diverse range of styles, preferences, and needs.
             </p>
             <div className={styles.buttonWrapper}>
               <a href="#contact" className={styles.ctaBtn}>

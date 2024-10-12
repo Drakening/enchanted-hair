@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito'), 
+         url('./Fonts/NunitoSans_7pt-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rufina';
+    src: local('Rufina'), 
+         url('./Fonts/Rufina-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

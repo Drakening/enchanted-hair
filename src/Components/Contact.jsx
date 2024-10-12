@@ -1,14 +1,18 @@
 import React from 'react';
 import styles from '../Styling/Contact.module.css'; 
+import Scrollanimation from './Ui/fadeInUp/ScrollAnimation';
 
 const ContactSection = () => {
   return (
     <section className={styles.contact}>
       <div className={styles.contactContainer}>
         <div className={styles.headingTitle}>
-          <h2>Let's Get In Contact</h2>
+          <Scrollanimation>
+            <h2>Let's Get In Contact</h2>
+          </Scrollanimation>
         </div>
         <div className={styles.formContainer}>
+        <Scrollanimation>
           <form className={styles.form} action="" method="get">
             <div className={styles.orderWrapper}>
               <input
@@ -49,6 +53,7 @@ const ContactSection = () => {
               value="Order Product"
             />
           </form>
+        </Scrollanimation>
         </div>
       </div>
     </section>

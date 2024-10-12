@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '../Styling/Hero.module.css'; 
 import oneStar from '../Assets/hero/oneStar.png';
-import threeStar from '../Assets/hero/threeStars.png'
+import threeStar from '../Assets/hero/threeStars.png';
+import Scrollanimation from './Ui/fadeInUp/ScrollAnimation';
 
 
 const HeroSection = () => {
@@ -9,10 +10,11 @@ const HeroSection = () => {
   return (
     <section className={`${styles.hero2} ${styles.section}`}>
       <div className={styles.heroContainer2}>
+      <Scrollanimation>
         <div className={`${styles.heroContent2} ${styles.animate}`}>
           <div className={styles.heroTitle2}>
             <h1>
-              <span className={styles.gradientText}>Crowning</span> <span>You with Confidence</span>
+              <span className={styles.gradientText}>Crowning</span> <span>You With Confidence</span>
             </h1>
           </div>
           <p className={styles.heroText2}>
@@ -39,6 +41,7 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
+        </Scrollanimation>
       </div>
       <img className={`${styles.threeStar} ${styles.animate}`} src={threeStar} alt="Three Stars" />
       <img className={`${styles.oneStar} ${styles.animate}`} src={oneStar} alt="One Star" />

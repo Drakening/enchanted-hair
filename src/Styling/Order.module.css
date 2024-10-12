@@ -50,7 +50,6 @@
   text-transform: capitalize;
   margin-top: 10px;
   font-size: 60px;
-  font-family: Rufina, sans-serif;
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 10px;
@@ -127,7 +126,8 @@
 
 .servicesImg {
   height: 450px;
-  border-radius: 0 160px;
+    border-radius: 0 160px;
+    width: 350px;
 }
 
 .orderBtn {

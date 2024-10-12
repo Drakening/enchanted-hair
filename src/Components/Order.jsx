@@ -5,7 +5,7 @@ import Delivery from '../Assets/deliveryPackage.jpg';
 const Order = () => {
 
   return (
-    <section className={styles.servicesSection}>
+    <section id="services" className={styles.servicesSection}>
       <div className={styles.servicesContainer}>
         <div
           className={styles.servicesWrapper}

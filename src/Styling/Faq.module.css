@@ -24,7 +24,6 @@
     letter-spacing: .5px;
     text-transform: capitalize;
     margin-top: 10px;
-    font-family: Rufina, sans-serif;
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2em;
@@ -66,25 +65,25 @@
   
   .faqCard:nth-child(1) {
     grid-column: span 2;
-    background-color: #F05365;
+    background-color: #ff5d70;
     text-align: center;
   }
   
   .faqCard:nth-child(2),
   .faqCard:nth-child(3) {
     grid-column: span 1;
-    background-color: #F6AA1C;
+    background-color: #ffbd41;
   }
   .faqCard:nth-child(4) {
     grid-column: span 2;
-    background-color: #F05365;
+    background-color: #ff5d70;
     text-align: center;
   
   }
   .faqCard:nth-child(5),
   .faqCard:nth-child(6) {
     grid-column: span 1;
-    background-color: #F6AA1C;
+    background-color: #ffbd41;
   }
   
   @media (max-width: 500px) {
@@ -95,32 +94,32 @@
     }
     .faqCard:nth-child(1) {
       grid-column: span 2;
-      background-color: #F6AA1C;
+      background-color: #ffbd41;
       text-align: center;
     }
     
     .faqCard:nth-child(2){
       grid-column: span 2;
-      background-color: #F05365;
+      background-color: #ff5d70;
       text-align: center;
     }
     .faqCard:nth-child(3) {
       grid-column: span 2;
-      background-color: #F6AA1C;
+      background-color: #ffbd41;
     }
     .faqCard:nth-child(4) {
       grid-column: span 2;
-      background-color: #F05365;
+      background-color: #ff5d70;
       text-align: center;
     
     }
     .faqCard:nth-child(5){
       grid-column: span 2;
-      background-color: #F6AA1C;
+      background-color: #ffbd41;
     }
     .faqCard:nth-child(6) {
       grid-column: span 2;
-      background-color: #F05365;
+      background-color: #ff5d70;
     }
     .faqHeading {
       font-size: 32px;
