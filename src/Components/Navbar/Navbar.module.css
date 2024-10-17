@@ -142,6 +142,10 @@ body {
     height: 3px;
     background-color: #333;
   }
+  .closeBtn {
+    display: none;
+
+  }
   
   /* Overlay and animation styles */
   @media screen and (max-width: 700px) {
@@ -195,6 +199,7 @@ body {
       font-size: 36px;
       color: #fff;
       cursor: pointer;
+      display: flex;
     }
   }
   

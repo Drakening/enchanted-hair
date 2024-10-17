@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
         <div className={styles.navWrapper}>
-          <a className={styles.brand} href="#">
+          <a className={styles.brand} href="/">
             <img src={icon} className={styles.brandIcon} alt="" />
           </a>
           <div className={`${styles.navigation} ${isMenuOpen ? styles.active : ''}`}>

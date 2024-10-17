@@ -61,9 +61,9 @@ const ProductsSection = () => {
                       <div className={styles.productLink}>
                         <img className={styles.productImg} src={product.imgSrc} alt={product.name} />
                         <div className={styles.aboutProduct}>
-                          <a href="#" className={styles.learnMore}>
+                          <div className={styles.learnMore}>
                             <h5 className={styles.productName}>{product.name}</h5>
-                          </a>
+                          </div>
                         </div>
                       </div>
                     </div>

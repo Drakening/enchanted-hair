@@ -32,21 +32,33 @@
   display: flex;
   position: relative;
 }
+
 .filter {
   max-width: 100%;
-  text-align: left;
-  cursor: pointer;
-  color: #222;
-  padding: 9px 30px;
   text-decoration: none;
   display: inline-block;
-  position: relative;
-  border-bottom: 1px solid rgba(51, 45, 40, .4);
-  padding-top: 0;
-  padding-bottom: 10px;
-  background: none;
+  padding: 12px 24px;
+  font-size: 16px;
   border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #9d174d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.filter:hover {
+  background-color: #fbcfe8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.filter:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(157, 23, 77, 0.2);
+}
+
 .active {
   border-bottom-color: #fc563f;
   color: #fc563f;
@@ -125,4 +137,7 @@
   .productsHeading {
       font-size: 32px;
   }
+  .filter {
+    width: 100%;
+}
 }
