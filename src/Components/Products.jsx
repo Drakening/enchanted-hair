@@ -1,4 +1,3 @@
-// ProductsSection.jsx
 import React, { useState } from 'react';
 import styles from '../Styling/Products.module.css';
 import Scrollanimation from './Ui/fadeInUp/ScrollAnimation';

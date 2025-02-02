@@ -6,7 +6,7 @@ const FooterSection = () => {
   return (
     <section className={styles.footer}>
       <div className={styles.copyrightWrapper}>
-        <span>@ 2024</span>
+        <span>@ 2025</span>
         <span>Enchanted Wigs</span>
       </div>
       <div className={styles.socialLinks}>
