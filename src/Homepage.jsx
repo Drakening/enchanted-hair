@@ -5,6 +5,7 @@ import About from './Components/About';
 import Faq from './Components/Faq';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import Chatbot from './Components/chatbot/Chatbot';
 import './App.css';
 
 const Homepage = () => {
@@ -27,6 +28,7 @@ const Homepage = () => {
           <Contact />
         </div>
         <Footer />
+        <Chatbot />
       </div>
     );
   };
