@@ -1,6 +1,6 @@
 # Enchated Hair
 
-A website for advertising hair weaves and hair extesions.
+A basic website for advertising hair weaves and hair extesions.
 
 ## Live site
 
